@@ -28,6 +28,7 @@ logger = logging.get_logger(__name__)
 FLAX_MODEL_MAPPING_NAMES = OrderedDict(
     [
         # Base model mapping
+        ("rwkv4_neo", "FlaxRwkv4NeoModel"),
         ("albert", "FlaxAlbertModel"),
         ("bart", "FlaxBartModel"),
         ("beit", "FlaxBeitModel"),
@@ -87,6 +88,8 @@ FLAX_MODEL_FOR_PRETRAINING_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_MASKED_LM_MAPPING_NAMES = OrderedDict(
     [
         # Model for Masked LM mapping
+("rwkv4_neo", "FlaxRwkv4NeoForMaskedLM"),
+("rwkv4_neo", "FlaxRwkv4NeoForMaskedLM"),
         ("albert", "FlaxAlbertForMaskedLM"),
         ("bart", "FlaxBartForConditionalGeneration"),
         ("bert", "FlaxBertForMaskedLM"),
@@ -136,6 +139,7 @@ FLAX_MODEL_FOR_VISION_2_SEQ_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_CAUSAL_LM_MAPPING_NAMES = OrderedDict(
     [
         # Model for Causal LM mapping
+("rwkv4_neo", "FlaxRwkv4NeoForCausalLM"),
         ("bart", "FlaxBartForCausalLM"),
         ("bert", "FlaxBertForCausalLM"),
         ("big_bird", "FlaxBigBirdForCausalLM"),
@@ -155,6 +159,7 @@ FLAX_MODEL_FOR_CAUSAL_LM_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING_NAMES = OrderedDict(
     [
         # Model for Sequence Classification mapping
+("rwkv4_neo", "FlaxRwkv4NeoForSequenceClassification"),
         ("albert", "FlaxAlbertForSequenceClassification"),
         ("bart", "FlaxBartForSequenceClassification"),
         ("bert", "FlaxBertForSequenceClassification"),
@@ -172,6 +177,7 @@ FLAX_MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_QUESTION_ANSWERING_MAPPING_NAMES = OrderedDict(
     [
         # Model for Question Answering mapping
+("rwkv4_neo", "FlaxRwkv4NeoForQuestionAnswering"),
         ("albert", "FlaxAlbertForQuestionAnswering"),
         ("bart", "FlaxBartForQuestionAnswering"),
         ("bert", "FlaxBertForQuestionAnswering"),
@@ -189,6 +195,7 @@ FLAX_MODEL_FOR_QUESTION_ANSWERING_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_TOKEN_CLASSIFICATION_MAPPING_NAMES = OrderedDict(
     [
         # Model for Token Classification mapping
+("rwkv4_neo", "FlaxRwkv4NeoForTokenClassification"),
         ("albert", "FlaxAlbertForTokenClassification"),
         ("bert", "FlaxBertForTokenClassification"),
         ("big_bird", "FlaxBigBirdForTokenClassification"),
@@ -204,6 +211,7 @@ FLAX_MODEL_FOR_TOKEN_CLASSIFICATION_MAPPING_NAMES = OrderedDict(
 FLAX_MODEL_FOR_MULTIPLE_CHOICE_MAPPING_NAMES = OrderedDict(
     [
         # Model for Multiple Choice mapping
+("rwkv4_neo", "FlaxRwkv4NeoForMultipleChoice"),
         ("albert", "FlaxAlbertForMultipleChoice"),
         ("bert", "FlaxBertForMultipleChoice"),
         ("big_bird", "FlaxBigBirdForMultipleChoice"),

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 from . import (
+    rwkv4_neo,
     albert,
     align,
     altclip,
