@@ -187,4 +187,4 @@ if __name__ == "__main__":
     m.load_state_dict(a)
     print(m.model.embeddings.state_dict())
     print(a['model.embeddings.weight'])
-    print(m(torch.arange(10).unsqueeze(0)))
+    print(m(torch.arange(10).unsqueeze(0))['logits'][:,-1,:])
